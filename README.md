@@ -5,10 +5,10 @@ Real-world multi-label classification (MLC) often suffers from two coupled chall
 
 <img src='flow.png' width=1200>
 
-## :closed_book: Requirements 
+## Requirements 
 * [Pytorch](https://pytorch.org/)
 * [Sklearn](https://scikit-learn.org/stable/)
-## :clipboard: Dataset 
+## Dataset 
 To evaluate/train Long-Tailed Partial Multi-Label Learning, first, the [VOC2012/2007](http://host.robots.ox.ac.uk/pascal/VOC/), [MSCOCO](https://cocodataset.org/#download) and [NUS-WIDE](https://huggingface.co/datasets/Lxyhaha/NUS-WIDE) datasets need to be downloaded. The image paths, labels, and captions for the VOC-MLT and COCO-MLT datasets can be found:
 
 * [COCO-PMLT](https://github.com/zhongjingyu1/NDLP/tree/master/appendix)
@@ -68,7 +68,7 @@ Shell
             ├── 0_2124494179_b039ddccac_m.jpg
             ...
 ```
-## :page_with_curl: Usage
+## Usage
 ### VOC-PMLT
 ```bash
 python lmpt/train.py configs/voc/LT_resnet50_pfc_DB.py \
@@ -93,7 +93,7 @@ python lmpt/train.py configs/coco/LT_resnet50_pfc_DB.py \
 --eta 0.9 \
 --alpha_range 0.4,0.8 \
 ```
-## :wrench: Pre-trained models
+## Pre-trained models
 #### COCO-MLT
 |   Backbone  | $$\rho$$  |    Total   |    Head   |  Medium  |   Tail  |      Download      |
 | :---------: |:---------:| :------------: | :-----------: | :---------: | :---------: | :----------------: |
@@ -111,20 +111,8 @@ python lmpt/train.py configs/coco/LT_resnet50_pfc_DB.py \
 | :---------: |:---------:| :------------: | :-----------: | :---------: | :---------: | :----------------: |
 |  ResNet-50  |    0.05   |    29.43   |    33.04  |  23.31   | 51.78   | [model](https://drive.google.com/file/d/1beZI2ADMT2jQSyZZmdJ9oOt8ZM7Hev7h/view?usp=sharing)   |
 
-## :heartpulse: Acknowledgements
+## Acknowledgements
 We use code from [DBL](https://github.com/wutong16/DistributionBalancedLoss) and [LMPT](https://github.com/richard-peng-xia/LMPT). We thank the authors for releasing their code.
-## :mailbox_closed: Contact
+## Contact
 If you have any questions, please create an issue on this repository or contact at [23171214508@stu.xidian.edu.cn](mailto:23171214508@stu.xidian.edu.cn).
-## :pencil2: Citing
-If you find this code useful, please consider to cite our work.
-```
-@article{zhong2026Noise,
-  title={Noise correction and distribution fine-tuning for long-tailed partial multi-label learning},
-  author = {Jingyu Zhong and Ronghua Shang and Mengmeng Liu and Yuhao Xie and Jie Feng},
-  journal = {Pattern Recognition},
-  volume = {180},
-  pages = {114096},
-  year = {2026},
-}
-```
 
