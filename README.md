@@ -144,7 +144,7 @@ The repository already contains the long-tailed split metadata and pre-generated
 Reported VOC-PMLT settings:
 
 | Training images | Classes | Noise rates | Test images |
-|---:|---:|:---:|---:|
+|---|---|---|---|
 | 1,142 | 20 | 0.1 / 0.3 / 0.5 | 4,952 |
 
 ### 2. COCO-PMLT
@@ -248,11 +248,6 @@ python train_ours.py \
   --gpus 1
 ```
 
-For the other reported settings, change `--partial_rate` to `0.1` or `0.2`.
-
-> **Code note:** the current `argparse` choices in `train_ours.py` omit `0.2`. To reproduce COCO-PMLT with `rho = 0.2`, add `0.2` to the `choices` list of `--partial_rate`.
-
-
 ### Recommended dataset-specific settings
 
 The parameter analysis in the paper suggests the following settings for the main reported LT-PML results:
@@ -323,7 +318,7 @@ python test.py \
 Total mAP (%) reported in the paper:
 
 | Dataset | Noise rate | ProDepC-HL | ProDepC |
-|:---|:---:|---:|---:|
+|:---：|:---:|：---:|：---:|
 | VOC-PMLT | 0.1 | 71.53 | **72.30** |
 | VOC-PMLT | 0.3 | 60.60 | **61.49** |
 | VOC-PMLT | 0.5 | 41.15 | **42.26** |
@@ -334,24 +329,6 @@ Total mAP (%) reported in the paper:
 Across the reported LT-PML benchmarks, ProDepC improves over the strongest competing methods by up to **9.06 percentage points in total mAP** and **9.13 percentage points in tail-class mAP**.
 
 Results may vary slightly with hardware, CUDA/cuDNN versions, and random initialization. The paper reports five runs for the synthetic benchmark experiments.
-
----
-
-## Implementation Notes
-
-1. **The optimizer learning rate is controlled by the config file.**  
-   Although `train_ours.py` defines a `--lr` argument, the current training code builds the optimizer from `cfg.optimizer`. The default learning rate in the provided VOC/COCO configs is `0.02`.
-
-2. **COCO contains a machine-specific path in the released config.**  
-   Update `data_root` before training.
-
-3. **The provided long-tailed split metadata can be used directly.**  
-   `create_longtail_dataset.py` is only needed when regenerating long-tailed splits; it contains local paths that should be adapted to your machine.
-
-4. **This release is designed for a single-GPU workflow.**  
-   `train_ours.py` uses `MMDataParallel` and the `--gpus` option controls the visible device list for non-distributed training.
-
----
 
 ## Citation
 
