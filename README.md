@@ -175,7 +175,7 @@ The original configuration contains a local absolute path and must be changed be
 Reported COCO-PMLT settings:
 
 | Training images | Classes | Noise rates | Test images |
-|---:|---:|:---:|---:|
+|---|---|---|---|
 | 1,909 | 80 | 0.05 / 0.1 / 0.2 | 5,000 |
 
 ### Candidate-label files
