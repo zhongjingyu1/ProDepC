@@ -315,8 +315,6 @@ python test.py \
 
 ## Main Results
 
-Total mAP (%) reported in the paper:
-
 | Dataset | Noise rate | ProDepC-HL | ProDepC |
 |:---:|:---:|:---:|:---:|
 | VOC-PMLT | 0.1 | 71.53 | **72.30** |
@@ -325,10 +323,6 @@ Total mAP (%) reported in the paper:
 | COCO-PMLT | 0.05 | 42.83 | **43.89** |
 | COCO-PMLT | 0.1 | 37.19 | **38.46** |
 | COCO-PMLT | 0.2 | 31.62 | **32.87** |
-
-Across the reported LT-PML benchmarks, ProDepC improves over the strongest competing methods by up to **9.06 percentage points in total mAP** and **9.13 percentage points in tail-class mAP**.
-
-Results may vary slightly with hardware, CUDA/cuDNN versions, and random initialization. The paper reports five runs for the synthetic benchmark experiments.
 
 ## Citation
 
