@@ -347,5 +347,5 @@ This implementation uses components from the long-tailed multi-label learning in
 
 ## Contact
 
-For questions about the paper or code, please open a GitHub issue.
+If you have any questions, please create an issue on this repository or contact at [23171214508@stu.xidian.edu.cn](mailto:23171214508@stu.xidian.edu.cn).
 
