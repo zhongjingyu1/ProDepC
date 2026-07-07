@@ -318,7 +318,7 @@ python test.py \
 Total mAP (%) reported in the paper:
 
 | Dataset | Noise rate | ProDepC-HL | ProDepC |
-|:---：|:---:|：---:|：---:|
+|:---:|:---:|:---:|:---:|
 | VOC-PMLT | 0.1 | 71.53 | **72.30** |
 | VOC-PMLT | 0.3 | 60.60 | **61.49** |
 | VOC-PMLT | 0.5 | 41.15 | **42.26** |
