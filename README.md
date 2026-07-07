@@ -147,7 +147,7 @@ ProDepC addresses this setting through a **Multi-Label Logit Adjustment (Multi-L
 - **Multi-LA-based asymmetric disambiguation (MLA-AD) loss** for suppressing unreliable negative supervision while strengthening tail-class learning.
 
 <p align="center">
-  <img src="assets/framework.png" width="100%" alt="Overview of Multi-LA and ProDepC">
+  <img src="flow.png" width="100%" alt="Overview of Multi-LA and ProDepC">
 </p>
 
 The current code release focuses on the main **VOC-PMLT** and **COCO-PMLT** experiments.
