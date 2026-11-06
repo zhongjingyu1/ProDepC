@@ -1,7 +1,7 @@
 # ProDepC
 
 <p align="center">
-  <b>Prototype-Based and Dependency-Aware Calibrated Multi-Label Logit Adjustment<br>
+  Prototype-Based and Dependency-Aware Calibrated Multi-Label Logit Adjustment<br>
   for Long-Tailed Partial Multi-Label Classification</b>
 </p>
 
