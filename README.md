@@ -322,12 +322,12 @@ python test.py \
 Please cite the paper when using this code. The final bibliographic information can be updated after publication.
 
 ```bibtex
-@article{zhong2026prodepc,
+@article{zhong2024negative,
   title   = {Prototype-Based and Dependency-Aware Calibrated Multi-Label Logit Adjustment for Long-Tailed Partial Multi-Label Classification},
   author  = {Zhong, Jingyu and Shang, Ronghua and Mao, Shasha and Feng, Jie},
-  year    = {2026},
-  note    = {Manuscript}
-}
+  journal={IEEE Transactions on Multimedia},
+  year={2026},
+  publisher={IEEE}
 ```
 
 ---
