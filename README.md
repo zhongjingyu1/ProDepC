@@ -1,17 +1,10 @@
 # ProDepC
 
-<p align="center">
-  <b>Prototype-Based and Dependency-Aware Calibrated Multi-Label Logit Adjustment<br>
-  for Long-Tailed Partial Multi-Label Classification</b>
-</p>
+Official PyTorch Implementation
 
-<p align="center">
-  Jingyu Zhong · Ronghua Shang · Shasha Mao · Jie Feng
-</p>
+The article "Prototype-Based and Dependency-Aware Calibrated Multi-Label Logit Adjustment" has been accepted by **IEEE Transactions on Multimedia (TMM 2026)**.
 
-<p align="center">
-  Official PyTorch implementation of <b>ProDepC</b>.
-</p>
+> Jingyu Zhong, Ronghua Shang, Shasha Mao, Jie Feng
 
 ---
 
